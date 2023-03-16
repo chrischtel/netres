@@ -10,15 +10,8 @@ license-file = "license"
 
 [dependencies]
 clap = { version = "4.1.8", features = ["derive"] }
-tracing = "0.1.37"
-anyhow = "1.0.69"
-confy = "0.5.1"
-env_logger = "0.10.0"
-indicatif = "0.17.3"
-log = "0.4.17"
 system_shutdown = "4.0.1"
-miette = { version = "5.1.1", features = ["fancy"] }
-tracing-subscriber = "0.3.14"
+
 
 # The profile that 'cargo dist' will build with
 [profile.dist]
