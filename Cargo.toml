@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 description = "Quickly reset your network adapters if your internet is not working"
 license = "BSD-3-Clause"
-license-file = "/license"
+license-file = "license"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
