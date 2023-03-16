@@ -2,6 +2,9 @@
 name = "netres"
 version = "0.1.0"
 edition = "2021"
+description = "Quickly reset your network adapters if your internet is not working"
+license = "BSD-3-Clause"
+license-file = "/license"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -31,4 +34,9 @@ rust-toolchain-version = "1.67.1"
 # CI backends to support (see 'cargo dist generate-ci')
 ci = ["github"]
 # Target platforms to build apps for (Rust target-triple syntax)
-targets = ["x86_64-unknown-linux-gnu", "x86_64-apple-darwin", "x86_64-pc-windows-msvc", "aarch64-apple-darwin"]
+targets = [
+    "x86_64-unknown-linux-gnu",
+    "x86_64-apple-darwin",
+    "x86_64-pc-windows-msvc",
+    "aarch64-apple-darwin",
+]
