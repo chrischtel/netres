@@ -12,6 +12,7 @@
 # artifacts have been successfully uploaded. This allows you to
 # choose what to do with partial successes and avoids spamming
 # anyone with notifications before the release is actually ready.
+
 name: Release
 
 permissions:
@@ -75,6 +76,11 @@ jobs:
           # Disable all the upload-artifacts tasks if we have no actual releases
           HAS_RELEASES=$(cat dist-manifest.json | jq --raw-output ".releases != null")
           echo "has-releases=$HAS_RELEASES" >> "$GITHUB_OUTPUT"
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        
+          
+          
 
   # Build and packages all the things
   upload-artifacts:
