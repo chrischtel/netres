@@ -13,6 +13,6 @@ pub struct Cli {
 
 #[derive(Subcommand)]
 pub enum Commands {
-    /// Generate captions using deepgram
+    /// QReset network
     Reset(Reset),
 }

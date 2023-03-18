@@ -11,7 +11,7 @@ license-file = "license"
 [dependencies]
 clap = { version = "4.1.8", features = ["derive"] }
 system_shutdown = "4.0.1"
-
+indicatif = "0.17.3"
 
 # The profile that 'cargo dist' will build with
 [profile.dist]
