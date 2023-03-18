@@ -9,7 +9,7 @@ type WinCMD = std::process::Command;
 #[derive(Args, Debug)]
 pub struct Reset {
     #[clap(value_parser)]
-    ttr: u16, //*TTR means TimeTillRestart */
+    ttr: u16, //*TTR means TimeTillRestardt */
 
 }
 
