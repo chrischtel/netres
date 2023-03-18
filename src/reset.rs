@@ -8,11 +8,9 @@ type WinCMD = std::process::Command;
 
 #[derive(Args, Debug)]
 pub struct Reset {
-    #[clap(short, long, value_parser)]
+    #[clap(value_parser)]
     ttr: u16, //*TTR means TimeTillRestart */
 
-    #[clap(short, long, value_parser)]
-    message: String,
 }
 
 pub fn restart_pc(options: &Reset) {
@@ -53,7 +51,7 @@ pub fn restart_pc(options: &Reset) {
         .status()
         .expect("cls command failed to start");
     pb.finish_with_message("Done");
-    match reboot_with_message(options.message.as_str(), options.ttr.into(), true) {
+    match reboot_with_message("restarting", options.ttr.into(), true) {
         Ok(_) => println!("Shutting down, bye!"),
         Err(error) => eprintln!("Failed to shut down: {}", error),
     }
