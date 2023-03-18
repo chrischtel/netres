@@ -1,6 +1,6 @@
 [package]
 name = "netres"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "Quickly reset your network adapters if your internet is not working"
 license = "BSD-3-Clause"
